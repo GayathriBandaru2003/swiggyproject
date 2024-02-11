@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+    <nav class="d-flex">
+        <div class="a1 d-flex-center">
+            <div class="logo">
+                <img src="/logo.png" alt="
+                Swiggy Logo">
+            </div>
+            <div class="location d-flex-center">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0 0h24v24H0z" />
+                            <path fill="currentColor"
+                                d="M20.891 2.006L20.997 2l.13.008l.09.016l.123.035l.107.046l.1.057l.09.067l.082.075l.052.059l.082.116l.052.096c.047.1.077.206.09.316l.005.106c0 .075-.008.149-.024.22l-.035.123l-6.532 18.077A1.55 1.55 0 0 1 14 22.32a1.547 1.547 0 0 1-1.329-.747l-.065-.127l-3.352-6.702l-6.67-3.336a1.55 1.55 0 0 1-.898-1.259L1.68 10c0-.56.301-1.072.841-1.37l.14-.07l18.017-6.506l.106-.03l.108-.018z" />
+                        </g>
+                    </svg> Setup your precise location <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2.5" d="m7 10l5 5m0 0l5-5" />
+                    </svg>
+                </h4>
+            </div>
+        </div>
+        <div class="a2 d-flex-center">
+            <div class="search">
+                <input type="text" placeholder="Search for restaurant and food">
+            </div>
+            <div class="profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M12 4a8 8 0 0 0-6.96 11.947A4.99 4.99 0 0 1 9 14h6a4.99 4.99 0 0 1 3.96 1.947A8 8 0 0 0 12 4m7.943 14.076A9.959 9.959 0 0 0 22 12c0-5.523-4.477-10-10-10S2 6.477 2 12a9.958 9.958 0 0 0 2.057 6.076l-.005.018l.355.413A9.98 9.98 0 0 0 12 22a9.947 9.947 0 0 0 5.675-1.765a10.055 10.055 0 0 0 1.918-1.728l.355-.413zM12 6a3 3 0 1 0 0 6a3 3 0 0 0 0-6"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <p>Home/Offers</p>
+        <h2>Restaurants With Great Offers Near Me</h2>
+        <div class="options d-flex">
+            <p class="option-active"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                    viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M9 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2M6.17 5a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 0 1 0-2zM15 11a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-1.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2zM9 17a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2z" />
+                </svg> Filter</p>
+            <p>Sort By</p>
+            <p class="option-active d-flex-center">Offers <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                    height="1em" viewBox="0 0 15 15">
+                    <path fill="currentColor"
+                        d="M3.64 2.27L7.5 6.13l3.84-3.84A.92.92 0 0 1 12 2a1 1 0 0 1 1 1a.9.9 0 0 1-.27.66L8.84 7.5l3.89 3.89A.9.9 0 0 1 13 12a1 1 0 0 1-1 1a.92.92 0 0 1-.69-.27L7.5 8.87l-3.85 3.85A.92.92 0 0 1 3 13a1 1 0 0 1-1-1a.9.9 0 0 1 .27-.66L6.16 7.5L2.27 3.61A.9.9 0 0 1 2 3a1 1 0 0 1 1-1c.24.003.47.1.64.27" />
+                </svg></p>
+            <p>Fast Delivery</p>
+            <p>New on Swiggy</p>
+            <p>Ratings 4.0+</p>
+            <p>Pure Veg</p>
+            <p>Filter</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/1.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/2.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/3.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/4.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/5.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/6.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/7.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/8.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/9.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/10.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/11.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/12.avif" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Shri Ramanaas</h4>
+                    <div class="ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z" />
+                        </svg> 4.4 32 mins
+                    </div>
+                    <p>South Indian, North Indian</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="get-offers main2">
+        <h2>Get the best offers on the food from top restaurants near you</h2>
+        <p>Get ready for a scrumptious adventure filled with unbeatable offers on your favourite foods and
+            restaurants. Whether you're in the mood for a cheesy pizza, a sizzling burger, or a delightful bowl of
+            pasta, now is the perfect time to satisfy your cravings while saving big.
+
+            All the top-rated restaurants and popular eateries are rolling out enticing deals and discounts that are
+            too good to resist. From mouthwatering buy-one-get-one-free offers</p>
+    </div>
+    <div class="main3">
+        <h2>Cuisine Restaurants Near Me</h2>
+        <div class="cards-pt2">
+            <a class="card-pt2" href="/">American Restaurants Near me</a>
+            <a class="card-pt2" href="/">Andhra Restaurants Near me</a>
+            <a class="card-pt2" href="/">Arebian Restaurants Near me</a>
+            <a class="card-pt2" href="/">asian Restaurants Near me</a>
+            <a class="card-pt2" href="/">Awadhi Restaurants Near me</a>
+            <a class="card-pt2" href="/">Bakery Restaurants Near me</a>
+            <a class="card-pt2" href="/">Bengali Restaurants Near me</a>
+            <a class="card-pt2" href="/">Taco Bell</a>
+            <a class="card-pt2" href="/">Beverages Restaurants Near me</a>
+            <a class="card-pt2" href="/">Biriyani Restaurants Near me</a>
+            <a class="card-pt2" href="/">Burgers Restaurants Near me</a>
+            <a class="card-pt2" href="/">Show more</a>
+        </div>
+    </div>
+    <div class="main3">
+        <h2>Restaurant Chains Near Me</h2>
+        <div class="cards-pt2">
+            <a class="card-pt2" href="/">CakeZone</a>
+            <a class="card-pt2" href="/">Gournet Ice Cream</a>
+            <a class="card-pt2" href="/">The Good Bow!</a>
+            <a class="card-pt2" href="/">Kouzine Kafe-the food</a>
+            <a class="card-pt2" href="/">Keventers Ice cream</a>
+            <a class="card-pt2" href="/">Bk Cafe</a>
+            <a class="card-pt2" href="/">Taco Bell</a>
+            <a class="card-pt2" href="/">The Dessert Heaven</a>
+            <a class="card-pt2" href="/">Chinese Wok</a>
+            <a class="card-pt2" href="/">ITC Fabelle Chocolates</a>
+            <a class="card-pt2" href="/">Indians Burgers</a>
+            <a class="card-pt2" href="/">Show More</a>
+        </div>
+    </div>
+    <div class="main3">
+        <h2>Popular Dishes Near Me</h2>
+        <div class="cards-pt2">
+            <a class="card-pt2" href="/">Panner near me</a>
+            <a class="card-pt2" href="/">Rasgulla near me</a>
+            <a class="card-pt2" href="/">Brounie near me</a>
+            <a class="card-pt2" href="/">Mushroom masala Near me</a>
+            <a class="card-pt2" href="/">Butter Naan Near me</a>
+            <a class="card-pt2" href="/">Mutton Curry Near me</a>
+            <a class="card-pt2" href="/">Veg pizza Near me</a>
+            <a class="card-pt2" href="/">French Fries Near me</a>
+            <a class="card-pt2" href="/">Idli Near me</a>
+            <a class="card-pt2" href="/">American Restaurants Near me</a>
+            <a class="card-pt2" href="/">Show More</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="f1">
+            <img src="/logoblack.jpg" alt="">
+            <p>© 2023 Bundl Technologies Pvt. Ltd</p>
+        </div>
+        <div class="f2">
+            <h4>Company</h4>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Team</p>
+            <p>Swiggy One</p>
+            <p>Swiggy Instamart</p>
+            <p>Swiggy Genie</p>
+        </div>
+        <div class="f3">
+            <h4>Contact us</h4>
+            <p>Help & Support</p>
+            <p>Partner with us</p>
+            <p>Ride with us</p>
+            <h4>Legal</h4>
+            <p>Terms & Conditions</p>
+            <p>Cookie Policy</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="f4">
+            <h4>We deliever to:</h4>
+            <p>Ahmedabad</p>
+            <p>Bangalore</p>
+            <p>Chennai</p>
+            <p>Delhi</p>
+            <p>Gurgaon</p>
+            <p>Hyderabad</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
